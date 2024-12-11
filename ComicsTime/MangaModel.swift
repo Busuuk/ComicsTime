@@ -12,7 +12,7 @@ struct MangaResponse: Codable {
     let data: Manga
 }
 
-struct Manga: Codable {
+struct Manga: Codable, Identifiable {
     let id: String
     let title: String
     let subTitle: String
